@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.lang.*?>
+<FlowPane hgap="10" vgap="10" styleClass="tools__box"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="org.example.paintfx.view.ToolBtn"
+          >
+    <padding>
+        <Insets top="25.0"/>
+    </padding>
+    <Button fx:id="cuttingBtn" text="Cut">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__cut"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="saveBtn" text="Save">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__cut"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="backgroundColor" text="Background Color">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__cut"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="pencilBtn" text="Pencil" styleClass="btn__pencil">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__pencil"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="drawRectangleBtn" text="Rectangle" styleClass="btn__pencil">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__pencil"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="drawOvalBtn" text="Oval" styleClass="btn__pencil">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__pencil"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="drawLineBtn" text="Line" styleClass="btn__pencil">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__pencil"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="rubberBtn" text="Rubber"  styleClass="btn__rubber">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__rubber"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="backBtn" text="Back" styleClass="btn__back">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__back"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="rotateBtn" text="Rotate" styleClass="btn__rotate">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__rotate"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="writeBtn" text="Write" styleClass="btn__rotate">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__rotate"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="paintElementBtn" text="Paint El" styleClass="btn__rotate">
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__rotate"/>
+        </styleClass>
+    </Button>
+    <Button fx:id="resolutionCanvas" text="Resolution"
+            styleClass="btn__rotate">
+        <!--                        <TextField fx:id="resolutionCanvas" onAction="#setResolutionCanvas"/>-->
+        <styleClass>
+            <String fx:value="btn"/>
+            <String fx:value="btn__cut"/>
+        </styleClass>
+    </Button>
+    <!--        <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
+</FlowPane>

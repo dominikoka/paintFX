@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.paintfx.view.MainView">
+    <!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"-->
+    <!--      fx:controller="org.example.paintfx.view.MainViewMainView">-->
+    <top>
+        <BorderPane styleClass="menu">
+
+            <left>
+                <fx:include source="tools.fxml" fx:id="tools"/>
+            </left>
+            <center>
+                <VBox alignment="CENTER">
+                    <padding>
+                        <Insets top="10.0" bottom="1"/>
+                    </padding>
+                    <Button text="PENCIL" fx:id="actualToolBtn" styleClass="btn__actualTool"/>
+
+                    <Button text="ACTUAL COLOR" fx:id="actualColorBtn" styleClass="btn__actualColor"
+                            id="btn__actualColor"/>
+                    <FlowPane alignment="CENTER">
+                        <Button text="LEFT" fx:id="rotateLeftBtn" onAction="#setRotateLeftBtn" userData="-90"
+                                styleClass="btn"/>
+                        <Button text="RIGHT" fx:id="rotateRightBtn" onAction="#setRotateRightBtn" userData="90"
+                                styleClass="btn"/>
+                        <Button text="OK" fx:id="rotateOkBtn" onAction="#setRotateBtnOk" styleClass="btn"/>
+                        <Button text="Size" fx:id="sizeText" styleClass="btn"/>
+                        <TextField fx:id="sizeTextField" onAction="#setSizeText"/>
+                        <Button text="Size" fx:id="sizeDraw" styleClass="btn"/>
+                        <TextField fx:id="sizeDrawField" onAction="#setSizeDrawText"/>
+
+                        <Button text="width" fx:id="widthCanvas" styleClass="btn"/>
+                        <TextField fx:id="widthCanvasField" onAction="#setWidthCanvas" styleClass="resolutionField"/>
+                        <Button text="height" fx:id="heightCanvas" styleClass="btn"/>
+                        <TextField fx:id="heightCanvasField" onAction="#setHeightCanvas" styleClass="resolutionField"/>
+
+                        <!-- <Button text="OK" fx:id="rotateOkBtn" onAction="#setRotateOk" styleClass="btn"/>-->
+                        <!--                        <Button text="RIGHT"/>-->
+                    </FlowPane>
+                </VBox>
+
+            </center>
+            <right>
+                <VBox alignment="TOP_RIGHT">
+
+
+                    <!--                        <Button text="red!" styleClass="btn__colorRed"/>-->
+                    <!--                        &lt;!&ndash;        <Button text="Hello!" onAction="#onHelloButtonClick"/>&ndash;&gt;-->
+                    <!--                   -->
+                    <fx:include source="colors.fxml" fx:id="colors"/>
+<!--                    <FlowPane alignment="TOP_RIGHT" hgap="5">-->
+<!--                        -->
+<!--                        -->
+
+<!--                    </FlowPane>-->
+
+                </VBox>
+            </right>
+        </BorderPane>
+    </top>
+    <center>
+
+        <!--            <ScrollPane fx:id="scroll" pannable="false">-->
+        <!--                <content>-->
+        <StackPane fx:id="board" styleClass="board">
+            <Canvas fx:id="canvas" styleClass="board__box">
+
+            </Canvas>
+        </StackPane>
+        <!--                </content>-->
+        <!--            </ScrollPane>-->
+
+
+    </center>
+    <bottom>
+        <VBox alignment="BOTTOM_RIGHT">
+            <Label text="0" fx:id="label_cordinates"/>
+        </VBox>
+    </bottom>
+
+
+    <!--<padding>-->
+    <!--<Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
+    <!--</padding>-->
+
+    <Label fx:id="welcomeText"/>
+
+    <!--</VBox>-->
+</BorderPane>

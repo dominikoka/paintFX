@@ -1,0 +1,171 @@
+.btn__pencil
+{
+  -fx-background-color: #883636;
+}
+.board
+{
+ //-fx-background-color: rgba(255, 204, 0, 0.27);
+  -fx-max-width: 1200;
+  -fx-max-height: 700;
+}
+.btn__colorRed {
+  -fx-background-color: red;-fx-padding: 2 8;
+  -fx-cursor: HAND;
+}
+
+.btn__colorBlue {
+  -fx-background-color: blue;-fx-padding: 2 8;
+  -fx-cursor: HAND;
+}
+
+.btn__colorGreen {
+  -fx-background-color: green;-fx-padding: 2 8;
+  -fx-cursor: HAND;
+}
+/*.btn__colorGreen .btn__actualColor*/
+/*{*/
+/*  -fx-background-color: green;*/
+/*}*/
+
+#btn__actualColor {
+  /*-fx-shape: 20px;*/
+  -fx-text-fill: white;
+
+  -fx-background-radius: 30;
+  -fx-background-color: black;
+  -fx-font-weight: bold;
+}
+
+#btn__actualColorGreen {
+  /*-fx-shape: 20px;*/
+
+  -fx-text-fill: white;
+
+  -fx-background-radius: 30;
+  -fx-background-color: green;
+  -fx-font-weight: bold;
+
+}#btn__actualColorBlue {
+  /*-fx-shape: 20px;*/
+
+  -fx-text-fill: white;
+
+  -fx-background-radius: 30;
+  -fx-background-color: blue;
+  -fx-font-weight: bold;
+
+}
+
+#btn__actualColorOrange {
+  /*-fx-shape: 20px;*/
+
+  -fx-text-fill: white;
+
+  -fx-background-radius: 30;
+  -fx-background-color: orange;
+  -fx-font-weight: bold;
+
+}
+
+#btn__actualColorRed {
+  /*-fx-shape: 20px;*/
+
+  -fx-text-fill: white;
+
+  -fx-background-radius: 30;
+  -fx-background-color: red;
+  -fx-font-weight: bold;
+
+}
+#btn__actualColorBlack {
+  /*-fx-shape: 20px;*/
+
+  -fx-text-fill: white;
+
+  -fx-background-radius: 30;
+  -fx-background-color: black;
+  -fx-font-weight: bold;
+
+}
+#btn__actualColorYellow {
+  /*-fx-shape: 20px;*/
+
+  -fx-text-fill: white;
+
+  -fx-background-radius: 30;
+  -fx-background-color: yellow;
+  -fx-font-weight: bold;
+
+}
+
+.btn {
+  -fx-start-margin: 10 0 0 0;
+  -fx-background-radius: 10;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 14px;
+  -fx-padding: 2 8;
+  -fx-border-color: transparent;
+  -fx-border-radius: 10;
+  -fx-transition: all 0.3s ease;
+  -fx-cursor: HAND;
+  -fx-background-color: linear-gradient(to bottom, #4facfe, #00f2fe);
+}
+.btn__cut
+{
+  /*-fx-text-fill: white;*/
+  /*-fx-background-color: linear-gradient(to bottom, #082650, #5cc1ff);*/
+}
+
+.tools__box {
+  /*-fx-background-radius: 10;*/
+  /*-fx-background-color: linear-gradient(to bottom, #082650, #5cc1ff);*/
+}
+
+.menu {
+  fx-background-radius: 10;
+  -fx-background-color: linear-gradient(to bottom, #0a0b0b, #5cc1ff);
+  -fx-padding:0 50;
+}
+
+.btn__rubber {
+}
+
+.btn__back {
+}
+
+.btn__rotate {
+}
+
+.btn__actualTool {
+  -fx-border-color: transparent;
+  -fx-background-radius: 30;
+  -fx-transition: all 0.3s ease;
+  /*-fx-background-color: rgb(194, 130, 255);*/
+  -fx-background-color: linear-gradient(to bottom, #C282FFFF, #620cb8);
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+
+}
+
+.btn__colorBlack {
+  -fx-background-color: #000000;-fx-padding: 2 8;
+  -fx-cursor: HAND;
+}
+
+.btn__colorYellow {
+  -fx-background-color: #efdd18;-fx-padding: 2 8;
+  -fx-cursor: HAND;
+}
+
+/*.board__box {*/
+/*  -fx-background-color: #050505;*/
+/*}*/
+.resolutionField {
+  -fx-max-width: 50;
+}
+
+.btn__colorOrange {
+  -fx-background-color: rgba(237, 149, 16, 0.9);-fx-padding: 2 8;
+  -fx-cursor: HAND;
+}

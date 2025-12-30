@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.FlowPane?>
+<FlowPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="org.example.paintfx.view.ColorBtn"
+          alignment="TOP_RIGHT" hgap="5">
+    <padding>
+        <Insets top="20.0" bottom="1"/>
+    </padding>
+    <Button fx:id="colorRedBtn" text="   " styleClass="btn__colorRed"/>
+    <Button fx:id="colorGreenBtn" text="   " styleClass="btn__colorGreen"/>
+    <Button fx:id="colorBlueBtn" text="   " styleClass="btn__colorBlue"/>
+    <Button  fx:id="colorBlackBtn" text="   " styleClass="btn__colorBlack"/>
+    <Button  fx:id="colorOrangeBtn" text="   " styleClass="btn__colorOrange"/>
+    <Button  fx:id="colorYellowBtn" text="   " styleClass="btn__colorYellow" onAction="#changeColorYellow"/>
+
+    <!--        <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
+</FlowPane>
