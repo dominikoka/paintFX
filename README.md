@@ -8,6 +8,7 @@ The most polished features in this project:
 * **Bucket fill using the BFS algorithm** – fast filling of areas with the same color
 * **Selection rotation by 90° / 180° / 270°**
 * **Export to PNG**
+* * **Tests**
 
 ---
 
