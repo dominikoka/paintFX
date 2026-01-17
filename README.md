@@ -1,50 +1,51 @@
+
 # PaintFX
 
-aplikacja desktopowa w Javie - edytor rysowania i prostej obróbki grafiki w stylu „Paint”.
+**PaintFX** is a desktop application written in **Java** – a simple drawing and image editing tool inspired by classic “Paint” applications.
 
-Najbardziej dopracowane funkcje w tym projekcie:
+The most polished features in this project:
 
-* **Wiadro (wypełnianie) z algorytmem BFS** – szybkie wypełnianie obszaru o tym samym kolorze
-* **Obrót zaznaczenia o 90° / 180° / 270°**
-* **Zapis do PNG**
-
----
-
-## Funkcje
-
-### Rysowanie i kolor
-
-* rysowanie po płótnie (ołówek)
-* wybór koloru
-* **wiadro (wypełnianie) – BFS
-  Wypełnianie działa tak, że zaczyna od klikniętego piksela i „rozlewa” kolor po sąsiadach w obszarze tego samego koloru.
-
-### Edycja
-
-* zaznaczanie fragmentu obrazu
-* **obrót zaznaczenia: 90° / 180° / 270°**
-
-### Eksport
-
-* **zapis obrazu do PNG**
+* **Bucket fill using the BFS algorithm** – fast filling of areas with the same color
+* **Selection rotation by 90° / 180° / 270°**
+* **Export to PNG**
 
 ---
 
-## Zrzut ekranu
+## Features
 
-![Podgląd aplikacji](CanvasImage.png)
+### Drawing and color
+
+* drawing on the canvas (pencil tool)
+* color picker
+* **bucket fill – BFS**
+  The fill operation starts from the clicked pixel and spreads the color to neighboring pixels that have the same original color.
+
+### Editing
+
+* selecting a fragment of the image
+* **selection rotation: 90° / 180° / 270°**
+
+### Export
+
+* **saving the image as PNG**
 
 ---
 
-## Jak uruchomić
+## Screenshot
 
-### Opcja 1: IntelliJ IDEA
+![Application preview](CanvasImage.png)
 
-1. Otwórz projekt.
-2. Poczekaj aż pobiorą się zależności (jeśli używasz Mavena/Gradle).
-3. Uruchom klasę startową aplikacji (np. `Main` / `App`).
+---
 
-### Opcja 2: konsola (jeśli masz Maven Wrapper / plugin do JavaFX)
+## How to run
+
+### Option 1: IntelliJ IDEA
+
+1. Open the project.
+2. Wait for dependencies to be downloaded (if you are using Maven/Gradle).
+3. Run the application entry class (e.g. `Main` / `App`).
+
+### Option 2: Command line (if you use Maven Wrapper / JavaFX plugin)
 
 Windows:
 
@@ -60,15 +61,15 @@ macOS / Linux:
 
 ---
 
-## Jak działa „Wiadro” (BFS) – w skrócie
+## How the Bucket Tool (BFS) works – short explanation
 
-1. Pobieram kolor klikniętego piksela (kolor startowy).
-2. Jeśli kolor startowy = kolor docelowy → nic nie robię.
-3. Wrzucam piksel startowy do kolejki.
-4. Z kolejki biorę piksel i sprawdzam sąsiadów (np. góra/dół/lewo/prawo).
-5. Jeśli sąsiad ma kolor startowy i jest w granicach obrazu - zmieniam mu kolor i dodaję go do kolejki.
-6. Powtarzam aż kolejka się skończy.
+1. Read the color of the clicked pixel (start color).
+2. If the start color is the same as the target color → do nothing.
+3. Add the start pixel to a queue.
+4. Take a pixel from the queue and check its neighbors (up / down / left / right).
+5. If a neighbor has the start color and is inside the image bounds, change its color and add it to the queue.
+6. Repeat until the queue is empty.
 
-To daje przewidywalne działanie i nie ryzykuje „zawieszenia” jak przy bardzo głębokiej rekurencji.
+This approach is predictable and avoids stack overflow issues that can occur with very deep recursion.
 
-**Autor:** Dominik (dominikoka)
+**Author:** Dominik (dominikoka)
