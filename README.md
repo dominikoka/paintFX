@@ -32,8 +32,6 @@ Najbardziej dopracowane funkcje w tym projekcie:
 
 ## Zrzut ekranu
 
-Jeśli masz obrazek w repo, zostaw. Jeśli nie masz – usuń tę sekcję albo dodaj screenshot.
-
 ![Podgląd aplikacji](CanvasImage.png)
 
 ---
